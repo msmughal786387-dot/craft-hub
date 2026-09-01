@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handmade Crafts Hub | Crafted by Hand, Worn with Heart</title>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://i.ibb.co/bMnZG7dy/Screenshot-2026-08-05-214819-removebg-preview.png">
     <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/bMnZG7dy/Screenshot-2026-08-05-214819-removebg-preview.png">
@@ -15,6 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 1. Supabase CDN script -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<!-- 2. Connection Code -->
+<script>
+    const SUPABASE_URL = 'https://mbohyzlzgluywrdvruvl.supabase.co';
+    const SUPABASE_ANON_KEY = 'sb_publishable_jMZjYxRNw5eb8qY-aPEqAA_jAP23dTS';
+    
+    // Supabase client initialization
+    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    console.log("Supabase connected successfully!", supabaseClient);
+</script>
     
     <style>
         :root {
